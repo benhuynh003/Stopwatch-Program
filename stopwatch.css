@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    font-size: 8rem;
+}
+
+body {
+    height: 100vh;
+    background-image: url(diffuse.jpg);
+    backdrop-filter: blur(5px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: auto;
+    border: 3px solid white;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.055);
+    background-image: url(diffuse.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#controls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 100px;
+}
+
+#display {
+    margin-top: 15px;
+    font-size: 7rem;
+}
+
+#controls button {
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 5px;
+    min-width: 300px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.5s ease;
+}
+
+#start {
+    background-color: hsla(120, 100%, 50%, 0.747);
+}
+
+#start:hover {
+    background-color: hsla(120, 100%, 40%, 0.747);
+}
+
+#stop {
+    background-color: hsla(0, 100%, 50%, 0.705);
+}
+
+#stop:hover {
+    background-color: hsla(0, 100%, 40%, 0.705);
+}
+
+#reset {
+    background-color: hsla(240, 100%, 50%, 0.623);
+}
+
+#reset:hover {
+    background-color: hsla(240, 100%, 40%, 0.623);
+}
